@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>uGrowth - Painel</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body>
+
+		<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+	<h3>Crie e/ou vincule seu Instagram Business </h3>
+
+    <input id="instagram" class="inputinsta" type="text" name="instagram" placeholder="@meuInstagramBusiness">
+	<hr>
+	<input type="checkbox" id="termos" name="termos">
+	<label for="termos">Ao vincular minha conta com a plataforma <b>uGrowth,</b> eu concordo que li os termos de uso e estou ciente que o vínculo será utilizado para os analytics e networking interno.</label>
+	<a href="painel.html" class="button fit">Vincular</a>
+
+
+
+
+  </div>
+
+</div>
+
+			<header id="header">
+				<h1><a href="index.html">uGrowth</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="#">Meu Painel</a></li>
+						<li><a href="#one">Recompensas</a></li>
+						<li><a href="#two">Ajuda</a></li>
+						<li><a href="#" class="button special">Sair</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<div class="row">
+						<div class="6u 6u(medium) 12u$(small)">
+
+							<header class="major">
+								<p><span class="image left"><img src="images/pic08.jpg" alt="" /></span>
+									<h2>Sua empresa</h2>
+									<p class="seunv">SEU NÍVEL</p>
+									<a href="#" class="icon rounded"><h2 id="nivel">36</h2></a>
+								</p>
+								
+							</header>
+
+							<br>
+
+							<div class="infos">
+								<div class="infosingle">
+									<h4 class="titletask">Pontos acumulados <p class="points">335pts</p> </h4>
+								</div>
+
+								<div class="infosingle">
+									<h4 class="titletask">Parceiros <p class="points">6</p> </h4>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="taskarea 6u 6u(medium) 12u$(small)">
+
+							<div class="areatitle">
+								<h1>TAREFAS AINDA NÃO CONCLUIDAS <a href="#" class="button small realizar" id="myBtn">REALIZAR TASKS</a></h1>
+							</div>
+							<div class="taskcontainer">
+
+								<div class="task fit">
+
+									<a href="">
+									<input type="checkbox" id="task1" name="task1">
+									<label for="task1" class="labeltask">
+										<h4 class="titletask">Crie ou vincule seu Instagram <p class="points">12pts</p> </h4>
+										<p class="desctask">Ter esta rede social é essêncial para seu alcance de novos clientes.</p>
+									</label>
+									</a>
+								</div>
+
+								<div class="task fit">
+									<input type="checkbox" id="task2" name="task2">
+									<label for="task2" class="labeltask">
+										<h4 class="titletask">Conecte-se à outro membro (2/15) <p class="points">90pts</p> </h4>
+										<p class="desctask">Faça conexões, apoie e tenha o apoio de outros membros.</p>
+									</label>
+
+								</div>
+
+								<div class="task fit">
+									<input type="checkbox" id="task3" name="task3">
+									<label for="task3" class="labeltask">
+										<h4 class="titletask">Responda um questionário sobre economia <p class="points">22pts</p> </h4>
+										<p class="desctask">Aqui, traçaremos um perfil sobre sua personalidade investidora.</p>
+									</label>
+								</div>
+
+								<div class="task fit">
+									<input type="checkbox" id="task4" name="task4">
+									<label for="task4" class="labeltask">
+										<h4 class="titletask">Crie ou vincule seu Instagram <p class="points">12pts</p> </h4>
+										<p class="desctask">Ter esta rede social é essêncial para seu alcance de novos clientes.</p>
+									</label>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+					
+
+				</div>
+			</section>
+
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="8u 12u$(medium)">
+							<ul class="copyright">
+								<li>&copy; uGrowth. Todos os direitos reservados.</li>
+							</ul>
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<ul class="icons">
+								<li>
+									<a class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
+								</li>
+								<li>
+									<a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
+								</li>
+								<li>
+									<a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
+								</li>
+								<li>
+									<a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+
+
+			<script>
+var $doc = $('html, body');
+$('a').click(function() {
+    $doc.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+
+
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+	</body>
+</html>
