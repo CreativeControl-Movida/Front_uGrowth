@@ -1372,3 +1372,41 @@
 .labeltask{
 	width:100%;
 }
+
+/* ajuda */
+
+.acordeon input {
+  display: none;
+}
+
+.acordeon__titulo {
+  display: block;
+  padding: 15px;
+  background: #ccc;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+  width:100%;
+}
+.acordeon__titulo:hover {
+  background: #B67FAB;
+  color:#fff;
+}
+
+.acordeon__contenido {
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  transition: all 0.5s;
+}
+
+.acordeon__titulo:before{
+	display:none;
+	visibility: hidden;
+}
+
+.acordeon input:checked ~ .acordeon__contenido{
+  height: auto;
+  margin: 15px 0;
+}

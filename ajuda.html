@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>uGrowth - Ajuda</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body>
+
+		<div id="myModal" class="modal">
+
+  	<div class="modal-content">
+		    <span class="close">&times;</span>
+
+			<h3>Crie e/ou vincule seu Instagram Business </h3>
+
+		    <input id="instagram" class="inputinsta" type="text" name="instagram" placeholder="@meuInstagramBusiness">
+			<hr>
+			<input type="checkbox" id="termos" name="termos">
+			<label for="termos">Ao vincular minha conta com a plataforma <b>uGrowth,</b> eu concordo que li os termos de uso e estou ciente que o vínculo será utilizado para os analytics e networking interno.</label>
+			<a href="painel.html" class="button fit">Vincular</a>
+
+
+  </div>
+
+</div>
+
+			<header id="header">
+				<h1><a href="index.html">uGrowth</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Voltar ao Início</a></li>
+						<li><a href="index.html">Ajuda</a></li>
+						<li><a href="#" class="button special" id="myBtn">Login</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major">
+						<h2>Dúvidas frequentes</h2>
+						<p>Aqui agrupamos as perguntas mais recorrentes e se você não encontrar o que procura, pode entrar em contato conosco clicando <a href="#">Aqui</a></p>
+					</header>
+
+					<div class="acordeon">
+							<div class="acordeon__item">
+								<input type="radio" name="acordeon" id="item1" class="acordeon__radio">
+								<label for="item1" class="acordeon__titulo">Por que ser membro?</label>
+								<p class="acordeon__contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quod dolorem nam iste laudantium doloremque perspiciatis assumenda, corporis minima, eligendi molestiae dolorum facere iure cum excepturi inventore expedita magni dolores.</p>
+							</div>
+							<div class="acordeon__item">
+								<input type="radio" name="acordeon" id="item2">
+								<label for="item2" class="acordeon__titulo">Quem pode fazer parte da uGrowth?</label>
+								<p class="acordeon__contenido">Accusantium et vel ipsam accusamus, quidem. Quisquam, sunt, alias doloribus fugiat accusantium dolores voluptatibus. Facere, enim, voluptatibus. Odio suscipit, possimus laboriosam debitis alias, nemo deleniti eius, recusandae architecto provident sit?</p>
+							</div>
+							<div class="acordeon__item">
+								<input type="radio" name="acordeon" id="item3">
+								<label for="item3" class="acordeon__titulo">Tenho pontos, o que fazer agora?</label>
+								<p class="acordeon__contenido">Adipisci iure temporibus quae voluptate nemo ipsum aperiam ipsa ratione magni, quibusdam consequatur tempore illo, molestias illum eligendi labore necessitatibus cum minima. Et voluptatibus quos molestias dignissimos, officia minus, maxime.</p>
+							</div>
+							<div class="acordeon__item">
+								<input type="radio" name="acordeon" id="item4">
+								<label for="item4" class="acordeon__titulo">Precisa alterar seus dados de cadastro?</label>
+								<p class="acordeon__contenido">Quo voluptate deleniti, maiores natus, voluptas veniam, omnis fugit recusandae dignissimos dolores sequi quibusdam explicabo velit eligendi suscipit quod? Totam optio error odit, dicta facere et quae sint natus quaerat.</p>
+							</div>
+					</div>
+					
+
+				</div>
+			</section>
+
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="8u 12u$(medium)">
+							<ul class="copyright">
+								<li>&copy; uGrowth. Todos os direitos reservados.</li>
+							</ul>
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<ul class="icons">
+								<li>
+									<a class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
+								</li>
+								<li>
+									<a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
+								</li>
+								<li>
+									<a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
+								</li>
+								<li>
+									<a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+
+
+			<script>
+var $doc = $('html, body');
+$('a').click(function() {
+    $doc.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+
+
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+	</body>
+</html>
