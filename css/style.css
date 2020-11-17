@@ -1099,6 +1099,7 @@
 			.wrapper.style2 .profile h4 {
 				margin-bottom: 0;
 				margin-top: 1em;
+				text-align: left;
 			}
 
 		.wrapper.style2 footer {
@@ -1338,6 +1339,7 @@
 	background: #dcc7ee;
 	padding: 20px;
 	margin-bottom: 20px;
+	cursor:pointer;
 }
 
 .seunv{
@@ -1409,4 +1411,24 @@
 .acordeon input:checked ~ .acordeon__contenido{
   height: auto;
   margin: 15px 0;
+}
+
+
+.majortitle h2, h5, h3{
+	text-align: center;
+}
+
+.majortitle .meuspontos{
+	margin:0;
+	color:#999;
+}
+
+.majortitle #pontos{
+	margin:0;
+	line-height: 0.5em;
+}
+
+.tituloprizes{
+	text-align: center;
+	color:#b77fed;
 }
