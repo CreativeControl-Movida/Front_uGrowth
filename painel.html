@@ -19,32 +19,45 @@
 
 		<div id="myModal" class="modal">
 
-  <div class="modal-content">
-    <span class="close">&times;</span>
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
 
-	<h3>Crie e/ou vincule seu Instagram Business </h3>
+			<h3>Crie e/ou vincule seu Instagram Business </h3>
 
-    <input id="instagram" class="inputinsta" type="text" name="instagram" placeholder="@meuInstagramBusiness">
-	<hr>
-	<input type="checkbox" id="termos" name="termos">
-	<label for="termos">Ao vincular minha conta com a plataforma <b>uGrowth,</b> eu concordo que li os termos de uso e estou ciente que o vínculo será utilizado para os analytics e networking interno.</label>
-	<a href="painel.html" class="button fit">Vincular</a>
-
-
+		    <input id="instagram" class="inputinsta" type="text" name="instagram" placeholder="@meuInstagramBusiness">
+			<hr>
+			<input type="checkbox" id="termos" name="termos">
+			<label for="termos">Ao vincular minha conta com a plataforma <b>uGrowth,</b> eu concordo que li os termos de uso e estou ciente que o vínculo será utilizado para os analytics e networking interno.</label>
+			<a href="painel.html" class="button fit">Vincular</a>
 
 
-  </div>
 
-</div>
+
+		  </div>
+
+		</div>
+
+		<div id="excluirModal" class="modal">
+
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+
+			<h3>Tem certeza que deseja desativar essa conta?</h3>
+			<hr>
+			<a href="#" class="button fit">Confirmar e desativar</a>
+
+		  </div>
+
+		</div>
 
 			<header id="header">
 				<h1><a href="index.html">uGrowth</a></h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="#">Meu Painel</a></li>
-						<li><a href="#one">Recompensas</a></li>
-						<li><a href="#two">Ajuda</a></li>
-						<li><a href="#" class="button special">Sair</a></li>
+						<li><a href="prizes.html">Recompensas</a></li>
+						<li><a href="ajuda.html">Ajuda</a></li>
+						<li><a href="index.html" class="button special">Sair</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -58,6 +71,7 @@
 							<header class="major">
 								<p><span class="image left"><img src="images/pic08.jpg" alt="" /></span>
 									<h2>"Sua empresa"</h2>
+									<a href="#" class="button small desativarbtn" id="myBtn">DESATIVAR CONTA</a>
 									<p class="seunv">SEU NÍVEL</p>
 									<a href="#" class="icon rounded"><h2 id="nivel">36</h2></a>
 								</p>
@@ -160,38 +174,59 @@
 			</footer>
 
 
+		<script>
+		var $doc = $('html, body');
+		$('a').click(function() {
+		    $doc.animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    return false;
+		});
 
 
-			<script>
-var $doc = $('html, body');
-$('a').click(function() {
-    $doc.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-    return false;
-});
+		var modal = document.getElementById("myModal");
 
+		var btn = document.getElementById("myBtn");
 
-var modal = document.getElementById("myModal");
+		var span = document.getElementsByClassName("close")[0];
 
-var btn = document.getElementById("myBtn");
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
 
-var span = document.getElementsByClassName("close")[0];
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+		    modal.style.display = "none";
+		  }
+		}
+		</script>
 
-span.onclick = function() {
-  modal.style.display = "none";
-}
+		<!-- Desabilitar minha conta -->
+		<script>
+		var modal = document.getElementById("excluirModal");
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+		var btn = document.getElementById("excluirConta");
+
+		var span = document.getElementsByClassName("close")[0];
+
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+		    modal.style.display = "none";
+		  }
+		}
+		</script>
 
 	</body>
 </html>

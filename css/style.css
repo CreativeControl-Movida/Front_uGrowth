@@ -1363,6 +1363,11 @@
 	float:right;
 }
 
+.desativarbtn{
+	float:right;
+	margin-right: 20px;
+}
+
 .taskcontainer{
 	margin-top: 20px;
 }
